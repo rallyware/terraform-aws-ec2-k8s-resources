@@ -16,7 +16,9 @@ output:
   file: README.md
   mode: replace
   template: |-
-    # terraform-module-template
+    # terraform-aws-ec2-k8s-resources
+
+    A simple Terraform module which returns a k8s resources requests/limits for a given instance type.
 
     <!-- BEGIN_TF_DOCS -->
     {{ .Content }}
