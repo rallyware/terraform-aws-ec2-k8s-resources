@@ -19,6 +19,6 @@ variable "resources_binding_percentage" {
       memory_upper = optional(number, 90)
     }
   )
-  default = {}
+  default     = {}
   description = "The percentage of resources binding to k8s entities"
 }
