@@ -67,8 +67,8 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_family"></a> [family](#input\_family) | The family of EC2 instance type | `string` | `"t2"` | no |
-| <a name="input_resources_binding_percentage"></a> [resources\_binding\_percentage](#input\_resources\_binding\_percentage) | The percentage of resources binding to k8s entities | <pre>object(<br>    {<br>      cpu_lower    = optional(number, 70)<br>      cpu_upper    = optional(number, 90)<br>      memory_lower = optional(number, 70)<br>      memory_upper = optional(number, 90)<br>    }<br>  )</pre> | `{}` | no |
+| <a name="input_family"></a> [family](#input\_family) | The family of EC2 instance type | `string` | `"t3"` | no |
+| <a name="input_resources_binding_percentage"></a> [resources\_binding\_percentage](#input\_resources\_binding\_percentage) | The percentage of resources binding to k8s entities | <pre>object(<br>    {<br>      cpu_lower    = optional(number, 70)<br>      cpu_upper    = optional(number, 95)<br>      memory_lower = optional(number, 70)<br>      memory_upper = optional(number, 95)<br>    }<br>  )</pre> | `{}` | no |
 | <a name="input_size"></a> [size](#input\_size) | The size of EC2 instance type | `string` | `"micro"` | no |
 ## Outputs
 
